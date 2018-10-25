@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/Button_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/CREATE_DB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Create_DB"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/INSERT_DATA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Insert_Data"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/QUERY_DATA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Query_Data"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/DELETE_DATA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Delete_Data"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/MODIFY_DATA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Modify_Data"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/DELETE_DB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Delete_DB"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/UPGRADE_DB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Upgrade_DB"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Show_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/Operation_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Operation_details"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:text="@string/Operation_details"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+            <ListView
+                android:id="@+id/Operation_Recode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Data_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Data_details"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:text="@string/Data_Details"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+            <ListView
+                android:id="@+id/QUERY_DATA_List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
